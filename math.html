@@ -1,38 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Math Game</title>
-
+	<title>Guess The Word</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" type="text/css" href="game.css">
+<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<h4 id="player1Name"></h4><span id="player1Score"></span>
-<br>
-<h4 id="player2Name"></h4><span id="player2Score"></span>
+	<h4 id="player_1_name" style="color: bisque; text-decoration: none; font-family: none;"></h4> <span id="player1_score"></span>
+	<br>
+	<h4 id="player_2_name" style="color: bisque; text-decoration: none; font-family: none;"></h4> <span id="player2_score"></span>
 <div class="container">
 	<center>
-		<h2 style="color: white;">Math Game!</h2>
-<h3 id="question"></h3>
-<h3 id="answer"></h3>
-<div id="output" class="col-lg-6"></div>
-
+		<h2 style="color: white; font-family: 'Yellowtail', cursive; font-size: 50px;">Here You Go!!</h2>
+		<h3 id="player_question" style="font-family: none; color: black;"></h3>
+		<h3 id="player_answer" style="font-family: none; color: black;"></h3>
 		<br>
 		<br>
-
-		<label>Send Your Question: <b style="color: red">Try putting Number Above 2 Digits</b></label>
-<input type="text" class="form-control" id="word" placeholder="Put Your Number Here">
-<br>
-<input type="text" class="form-control" id="word1" placeholder="Put Your Number Here">
+		<div id="output" class="col-lg-6"></div>
 		<br>
-<button id="btn1" class="btn btn-success" style="width: 30%;" onclick="send()">Send Now</button>
+		<h4>Number 1</h4>
+		<input type="number" class="form-control" id="number_1" placeholder="Number 1" style="width: 30%;">
+		<h4>Number 2</h4>
+		<input type="number" class="form-control" id="number_2" placeholder="Number 2" style="width: 30%;">
+		<br>
+		<button onclick="send()" style="width: 20%; background-color: aquamarine; color: black; font-weight: bold; border-radius: 5px;" class="btn btn-link">Send</button>
 	</center>
 </div>
-
 <script src="main.js"></script>
 </body>
 </html>
